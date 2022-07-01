@@ -1,7 +1,7 @@
 import {createUnplugin} from 'unplugin'
-import { importModule } from 'local-pkg'
+import {importModule} from 'local-pkg'
 
-export const unplugin = createUnplugin((options) => {
+export default createUnplugin((options) => {
     return {
         name: 'unplugin-demo',
         resolveId: (id) => {
@@ -28,8 +28,3 @@ export const unplugin = createUnplugin((options) => {
         }
     }
 });
-
-export const webpack = unplugin.webpack;
-
-export default unplugin;
-
