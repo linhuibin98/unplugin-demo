@@ -1,16 +1,10 @@
 {
   "name": "@linhuibin/unplugin-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@7.3.0",
   "description": "unplugin-demo",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.ts.d.ts",
-  "scripts": {
-    "build": "npm run clean && unbuild",
-    "clean": "rimraf dist"
-  },
   "author": "linhuibin98 <lhb1032352370@gmail.com> (https://github.com/linhuibin98)",
+  "license": "ISC",
   "homepage": "https://github.com/linhuibin98/unplugin-demo",
   "repository": {
     "url": "https://github.com/linhuibin98/unplugin-demo.git",
@@ -19,15 +13,23 @@
   "bugs": {
     "url": "https://github.com/linhuibin98/unplugin-demo/issues"
   },
-  "license": "ISC",
-  "files": [
-    "dist",
-    "*.d.ts"
-  ],
   "keywords": [
     "unplugin",
     "demo"
   ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.ts.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "npm run clean && unbuild",
+    "clean": "rimraf dist",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
   "dependencies": {
     "@types/node": "16",
     "local-pkg": "^0.4.1",
