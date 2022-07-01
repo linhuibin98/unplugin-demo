@@ -1,6 +1,6 @@
 {
   "name": "@linhuibin/unplugin-demo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@7.3.0",
   "description": "unplugin-demo",
   "author": "linhuibin98 <lhb1032352370@gmail.com> (https://github.com/linhuibin98)",
@@ -19,7 +19,7 @@
   ],
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types": "dist/index.ts.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "*.d.ts"
